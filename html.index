@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Number Ban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Official WhatsApp Ban</h1>
+            <p>Disclaimer: use only 1 time.</p>
+        </header>
+
+        <!-- Initial Display for Banned Number -->
+        <div id="initialDisplay" class="hidden">
+            <h2>The number <strong>0370207318</strong> is permanently banned from WhatsApp.</h2>
+            <button id="start">Start Now</button>
+        </div>
+
+        <!-- WhatsApp Number Input & Timer -->
+        <div id="prankForm" class="hidden">
+            <h2>Enter any number to simulate WhatsApp Ban</h2>
+            <input type="text" id="inputNumber" placeholder="Enter Phone Number">
+            <button id="checkBan">Check Ban</button>
+
+            <div id="loadingScreen" class="hidden">
+                <h2>Checking the number...</h2>
+                <div id="loading"></div>
+                <p>Loading... <span id="timer">30:00</span> minutes</p>
+            </div>
+
+            <div id="doneMessage" class="hidden">
+                <h2>Done!</h2>
+                <p>The number is now automatically banned from WhatsApp.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
